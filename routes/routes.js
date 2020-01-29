@@ -1,6 +1,6 @@
-const router = require("express").Router(); //what's Router()
+const router = require("express").Router(); //what's Router()???
 const Workout = require("../models/workout.js");
-
+//dbWorkout not declared?
 router.post("/api/workout", ({ body }, res) => {
   Workout.create(body)
     .then(dbWorkout => {
