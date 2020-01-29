@@ -1,7 +1,7 @@
 // Server.js - This file is the initial starting point for the Node/Express server.
 // *** Dependencies
 const express = require("express");
-const mongoose = requrie("mongoose");
+const mongoose = require("mongoose");
 
 // Sets up the Express App
 const app = express();
@@ -23,7 +23,7 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/budget", {
 const db = require("./models");
 
 // Routes
-require("./routes/api-routes.js")(app);
+app.use(require("./routes/api.js"));
 
 app.listen(PORT, () => {
     console.log(`App running on port ${PORT}!`);

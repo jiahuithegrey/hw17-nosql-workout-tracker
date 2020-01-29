@@ -20,3 +20,16 @@ router.post("/api/workout/bulk", ({ body }, res) => {
       res.status(400).json(err);
     });
 });
+
+router.get("/api/workout", (req, res) => {
+    Workout.find({})
+      .sort({ data: 1 })
+      .then(dbWorkout => {
+        res.json(dbWorkout);
+      })
+      .catch(err => {
+        res.status(400).json(err);
+      });
+  });
+
+module.exports = router;
