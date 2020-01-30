@@ -2,6 +2,7 @@
 // *** Dependencies
 const express = require("express");
 const mongoose = require("mongoose");
+const dotenv = require("dotenv");
 
 // Sets up the Express App
 const app = express();
