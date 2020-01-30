@@ -13,7 +13,7 @@ router.get("/api/workouts", (req, res) => {
     });
 });
 
-//update an existing workout
+//update an existing workout, from tutor
 router.put("/api/workouts/:id", (req, res) => {
   Workout.findOneAndUpdate({_id: req.params.id}, {$push:{exercises: req.body}})
     .then(dbWorkout => {
