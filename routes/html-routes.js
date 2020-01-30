@@ -1,23 +1,24 @@
-var path = require("path");
+const path = require("path");
+//is this line necessary for this?
+const router = require("express").Router();
 
-module.exports = app => {
-  app.get("/", (req, res) => {
+  router.get("/", (req, res) => {
     res.sendFile(path.join(_dirname, "../public/index.html"));
   });
 
-  app.get("/exercise", (req, res) => {
+  router.get("/exercise", (req, res) => {
     res.sendFile(path.join(_dirname, "../public/exercise.html"));
   });
 
-  //is this right?
-  app.get("/exercise?", (req, res) => {
-    res.sendFile(path.join(_dirname, "../public/exercise.html"));
-  })
-
-  app.get("/stats", (req, res) => {
+  router.get("/stats", (req, res) => {
     res.sendFile(path.join(_dirname, "../public/stats.html"));
   });
 
-};
+  //is this right?
+//   router.get("/exercise?", (req, res) => {
+//     res.sendFile(path.join(_dirname, "../public/exercise.html"));
+//   })
+
+module.exports = router;
 
 
