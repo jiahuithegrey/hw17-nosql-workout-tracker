@@ -8,6 +8,7 @@ This app is a handy tool to help users keep track of their daily workouts in ord
 
 ## Demo
 Heroku Deployment: [Workout Tracker](https://dashboard.heroku.com/apps/hw17-workout-tracker)
+
 ![Workout Tracker Demo](demo/FitnessTrackerDemo.gif)
 
 ## Development
