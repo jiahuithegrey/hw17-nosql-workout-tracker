@@ -13,7 +13,7 @@ Heroku Deployment: [Workout Tracker](https://dashboard.heroku.com/apps/hw17-work
 
 ## Development
 * Utilize MongoDB and Mongoose Schema to create, edit and get data
-* Create api routes and html routes to make the application function
+* Create API routes and HTML routes to make the application function
 
 ## Credits
 University of Washington Coding Bootcamp faculty
