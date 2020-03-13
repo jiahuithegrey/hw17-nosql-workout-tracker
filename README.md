@@ -7,7 +7,7 @@ This app is a handy tool to help users keep track of their daily workouts in ord
 * Database: MongoDB, Mongoose schema
 
 ## Demo
-Heroku Deployment: [Workout Tracker](https://dashboard.heroku.com/apps/hw17-workout-tracker)
+Heroku Deployment: [Workout Tracker](https://hw17-workout-tracker.herokuapp.com/)
 
 ![Workout Tracker Demo](demo/FitnessTrackerDemo.gif)
 
